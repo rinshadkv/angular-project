@@ -1,0 +1,89 @@
+// $bg-color:red
+// div
+//     background-color: $bg-color
+// nav
+//     background-color: yellow
+//     ul
+//         margin: 0
+//         padding: 0
+//         list-style: none
+
+//     li
+//         display: inline-block
+//         padding: 20px
+
+
+// @mixin btn-color($bg-color:red)
+//     background-color: $bg-color
+//     box-shadow: 0 0 1px rgba($bg-color, .25 )
+//     font-size: large
+//     font-weight: bold
+//     padding: 10px
+//     height: 200px
+//     width: 200px
+//     border-radius: 5px
+//     border-color: white
+
+// .basic
+//     @include btn-color()
+// .warn
+//     @include btn-color($bg-color:black)
+
+// .primary
+//     @include btn-color($bg-color:yellow)
+        
+
+
+
+// %messages
+//     border: 1px solid blue
+//     padding: 10px
+//     height: 200px
+//     width: 200px
+//     margin: 10px
+
+// %equal-height
+//     display: flex
+//     flex-wrap: wrap
+
+
+// $user:admin    
+
+// .success
+//     @extend %messages
+
+//     @if $user == admin
+//        color: green
+//        border-color: green
+//     @else 
+//      color: red
+//      border-color: red
+           
+    
+// $base-color: green
+// @mixin color-combo($color)
+//   padding: 10px
+//   font-weight:   bold
+//   color: $color
+    
+// @for $i from 1 through 6
+//    h#{$i}
+//     @include color-combo($base-color)
+              
+    
+// $p:3
+// @while $p <5
+    
+//     .item-#{$p}
+//         color: red
+//         $p:$p+1
+
+    
+    
+
+    
+
+
+
+
+            

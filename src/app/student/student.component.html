@@ -1,0 +1,41 @@
+   <button routerLink="add-student">add student</button> 
+
+<router-outlet></router-outlet>
+
+<div class="w-75 m-3 p-3"  >
+
+  <table class="table table-striped ">
+    <thead class="bg-secondary text-white">
+      <tr>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Contact</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Address</th>
+        <th scope="col">Username</th>
+        <th scope="col">Password</th>
+        <th scope="col">Update/Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of studentList">
+        <td>{{student.s_name}}</td>
+        <td>{{student.s_email}}</td>
+        <td>{{student.s_phone}}</td>
+        <td>{{student.s_gender}}</td>
+        <td>{{student.s_address}}</td>
+        <td>{{student.s_username}}</td>
+        <td>{{student.s_passwd}}</td>
+        <td><button class="btn btn-secondary" routerLink="/update-student/{{student.id}}" >Update</button></td>
+        <td><button class="btn btn-secondary" (click)="deleteStudent(student.id)">delete </button></td>
+
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+
+
